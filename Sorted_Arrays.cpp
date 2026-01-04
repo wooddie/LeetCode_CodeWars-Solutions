@@ -21,9 +21,9 @@ int nthSmallest(const std::vector<std::vector<int>> &arr, int n)
 
 int main()
 {
-    std::cout << "all tests passed!" << std::endl;
-
     assert(nthSmallest({{1, 5}, {2}, {4, 8, 9}}, 4) == 5);
+
+    std::cout << "all tests passed!" << std::endl;
 
     return 0;
 }
