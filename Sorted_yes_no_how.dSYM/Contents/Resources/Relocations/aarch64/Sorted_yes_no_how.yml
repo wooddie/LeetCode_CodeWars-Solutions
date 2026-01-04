@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/kanapiya/Documents/LeetCode_CodeWars-Solutions/Sorted_yes_no_how'
+relocations:     []
+...

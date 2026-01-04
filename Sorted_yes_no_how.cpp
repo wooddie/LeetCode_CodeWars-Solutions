@@ -3,6 +3,23 @@
 #include <sstream>
 #include <string>
 #include <vector>
+#include <algorithm>
+
+std::string is_sorted_and_how(const std::vector<int> &numbers)
+{
+
+    if (std::is_sorted(numbers.begin(), numbers.end()))
+    {
+        return "yes, ascending";
+    }
+
+    if (std::is_sorted(numbers.begin(), numbers.end(), std::greater<int>()))
+    {
+        return "yes, descending";
+    }
+
+    return "no";
+}
 
 std::string vector_to_string(const std::vector<int> &vec)
 {
@@ -21,11 +38,6 @@ void do_test(const std::vector<int> &input, const std::string &expected)
     assert(actual == (expected));
 }
 
-std::string is_sorted_and_how(const std::vector<int> &numbers)
-{
-    return "yes, ascending";
-}
-
 int main()
 {
     do_test({1, 1, 2, 3}, "yes, ascending");
@@ -41,7 +53,7 @@ int main()
     do_test({1, 2, 2}, "yes, ascending");
     do_test({+20, 0, 0, -20}, "yes, descending");
 
-    
+    std::cout << "all tests passed!" << std::endl;
 
     return 0;
 }
