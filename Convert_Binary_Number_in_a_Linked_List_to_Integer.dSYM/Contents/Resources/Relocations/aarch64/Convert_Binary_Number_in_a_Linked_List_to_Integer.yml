@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     Convert_Binary_Number_in_a_Linked_List_to_Integer
+relocations:     []
+...
