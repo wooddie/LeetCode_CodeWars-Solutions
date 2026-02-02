@@ -25,10 +25,10 @@ public:
 
 int main() {
     std::vector<char> l = {'c', 'f', 'j'};
-    std::cout << Solution::nextGreatestLetter(l, 'a');
-    std::cout << Solution::nextGreatestLetter(l, 'c');
+    std::cout << Solution::nextGreatestLetter(l, 'a') << std::endl;
+    std::cout << Solution::nextGreatestLetter(l, 'c') << std::endl;
     l = {'x', 'x', 'y', 'y'};
-    std::cout << Solution::nextGreatestLetter(l, 'z');
+    std::cout << Solution::nextGreatestLetter(l, 'z') << std::endl;
 
     return 0;
 }
