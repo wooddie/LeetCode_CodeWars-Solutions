@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     Count_of_Matches_in_Tournament
+relocations:     []
+...
