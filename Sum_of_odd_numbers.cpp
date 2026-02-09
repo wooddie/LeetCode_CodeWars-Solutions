@@ -16,10 +16,8 @@ long long rowSumOddNumbers(unsigned n)
 
 int main()
 {
-    std::cout << rowSumOddNumbers(1) << std::endl;
-    std::cout << rowSumOddNumbers(42) << std::endl;
-    // assert(rowSumOddNumbers(1) == (1));
-    // assert(rowSumOddNumbers(42) == (74088));
+    assert(rowSumOddNumbers(1) == (1));
+    assert(rowSumOddNumbers(42) == (74088));
 
     return 0;
 }
