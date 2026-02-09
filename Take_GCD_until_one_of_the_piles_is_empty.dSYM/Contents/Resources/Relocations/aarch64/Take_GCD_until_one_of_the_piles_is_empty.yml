@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/kanapiya/Documents/LeetCode_CodeWars-Solutions/Take_GCD_until_one_of_the_piles_is_empty'
+relocations:     []
+...
