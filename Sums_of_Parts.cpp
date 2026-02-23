@@ -1,23 +1,24 @@
 #include <iostream>
 #include <vector>
 #include <cassert>
+#include <numeric>
 
 using V = std::vector<unsigned long long>;
 
 std::vector<unsigned long long> partsSum(const std::vector<unsigned long long> &ls)
 {
+    if (ls.empty())
+        return {};
+
     std::vector<unsigned long long> result;
+    result.reserve(ls.size());
+
+    unsigned long long current_sum = std::accumulate(ls.begin(), ls.end(), 0ULL);
 
     for (size_t i = 0; i < ls.size(); ++i)
     {
-        unsigned long long sum = ls[i];
-
-        for (size_t j = i + 1; j < ls.size(); ++j)
-        {
-            sum += ls[j];
-        }
-
-        result.push_back(sum);
+        result.push_back(current_sum);
+        current_sum -= ls[i];
     }
 
     result.push_back(0);
