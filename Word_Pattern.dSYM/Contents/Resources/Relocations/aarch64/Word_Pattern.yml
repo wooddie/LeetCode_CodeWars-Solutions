@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/kanapiya/Documents/LeetCode_CodeWars-Solutions/Word_Pattern'
+relocations:     []
+...
