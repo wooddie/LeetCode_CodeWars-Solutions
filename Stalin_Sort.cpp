@@ -49,4 +49,6 @@ int main()
     a = {5, 3, 1};
     stalinSort(a);
     assert(a == (v{5}));
+
+    return 0;
 }
