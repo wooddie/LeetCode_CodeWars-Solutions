@@ -6,7 +6,7 @@
 #include <netinet/in.h> // Для sockaddr_in
 #include <arpa/inet.h>  // Для htons и inet_pton
 
-int main(int argc, char *argv[])
+int main()
 {
     int sock = socket(AF_INET, SOCK_STREAM, 0); // Создаём TCP сокет
 
