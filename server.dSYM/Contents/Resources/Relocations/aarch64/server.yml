@@ -1,5 +1,5 @@
 ---
 triple:          'arm64-apple-darwin'
-binary-path:     '/Users/kanapiya/Documents/LeetCode_CodeWars-Solutions/server'
+binary-path:     server
 relocations:     []
 ...
